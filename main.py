@@ -94,7 +94,7 @@ def on_click(row, col):
             buttons[move[0]][move[1]].config(text='O', state='disabled')
 
             if check_winner(board) == 'O':
-                messagebox.showinfo("Oyun Bitti", "Yapay Zeka Kazandı!")
+                messagebox.showinfo("Oyun Bitti", "Kaybettiniz")
                 root.quit()
                 return
             elif is_board_full(board):
